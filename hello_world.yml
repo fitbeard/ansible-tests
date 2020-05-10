@@ -1,11 +1,18 @@
 - name: Samples
   hosts: all
+  vars:
+    var1: "{{ lookup('hashi_vault', 'secret=secret/test/data/lab/ansible/tests:data').var1 }}"
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello World!"
-    - name: Create file
+    - name: Create a file
       file:
         path: /tmp/test
         state: touch
+        mode: "0644"
+    - name: Template a file
+      template:
+        src: templates/test2.j2
+        dest: /tmp/test2
         mode: "0644"
