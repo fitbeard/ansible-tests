@@ -1,4 +1,4 @@
-- name: Remote role
+- name: Remote private role
   gather_facts: true
   hosts:
     - all

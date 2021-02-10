@@ -2,3 +2,7 @@
 - src: git@github.com:hostinger/ansible-repo.git
   scm: git
   version: origin/master
+
+- src: https://github.com/geerlingguy/ansible-role-pip.git
+  scm: git
+  version: origin/master
