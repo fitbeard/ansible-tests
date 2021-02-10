@@ -1,8 +1,8 @@
 ---
 roles:
-- src: git@github.com:hostinger/ansible-repo.git
-  scm: git
-  version: origin/master
+  - src: git@github.com:hostinger/ansible-repo.git
+    scm: git
+    version: origin/master
 
 collections:
   # Install a collection from Ansible Galaxy.
