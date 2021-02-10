@@ -1,0 +1,6 @@
+- name: Remote role
+  gather_facts: false
+  hosts:
+    - all
+  roles:
+    - role: bootstrap-packer
