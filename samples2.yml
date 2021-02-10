@@ -1,5 +1,5 @@
 - name: Remote role
-  gather_facts: false
+  gather_facts: true
   hosts:
     - all
   roles:
