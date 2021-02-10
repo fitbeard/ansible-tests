@@ -1,7 +1,7 @@
 - name: Samples
   hosts: all
   vars:
-    var1: "{{ lookup('hashi_vault', 'secret=secret/test/data/lab/ansible/tests:data').var1 }}"
+    var1: "{{ lookup('hashi_vault', 'auth_method=approle secret=secret/core/development/ceph/lt-bnk-sandbox:cluster_fsid') }}"
   tasks:
     - name: Hello Message
       debug:
